@@ -1,21 +1,113 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Rampart+One&display=swap');
+
+.header{
+    position: fixed;
+    overflow-y: auto;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    padding-top: 4px;
+    padding-left: 25px;
+    padding-bottom: 4px;
+    box-shadow: 0 4px 10px #1338c0;
+    font-family: 'Bungee', sans-serif;
+    background: whitesmoke;
+    color: #1338c0;
+}
+.links{
+    font-family: 'Inter', sans-serif;
+    color: black;
+    text-decoration: none;
+    margin-left: 30px;
+    margin-top: 30px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.first-box{
+    padding-top: 100px;
+}
+.image-box{
+    padding-top: 400px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+.drone{
+    position: relative;
+    border-radius: 50%;
+    height: 450px;
+    width: 450px;
+    left: 20px;
+}
+.content-box {
+    width: fit-content;
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px #1338c0; /* Soft shadow */
+    margin: 20px auto; /* Centering */
+}
+.content-box-anchor {
+    position: fixed;
+    right: 290px;
+    bottom: 200px;
+    height: 500px;
+    width: 500px;
+    background-color: #1338c0;
+    border-radius: 50%;
+}
+.content-box1{
+    position: relative;
+    height: fit-content;
+    right: 300px;
+    bottom: 20px;
+}
+.content-box2{
+    position: relative;
+    height: fit-content;
+    right: 150px;
+    bottom: 1px;
+}
+.content-box3{
+    position: relative;
+    height: fit-content;
+    right: 20px;
+    bottom: 10px;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.content-text{
+    font-family: 'Inter', sans-serif;
+    margin: 0 auto;
+}
+.services-list{
+    list-style: square;
+}
+.home-images{
+
+}
+
+.footer{
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    padding-left: 25px;
+    padding-bottom: 100px;
+    font-family: 'Bungee', sans-serif;
+    background: rgba(100, 107, 127, 0.89);;
+    color: whitesmoke;
+}
+.footer div{
+    display: flex;
+    margin: 1em;
+}
+.footer div h3{
+    display: flex;
+    margin: 1em;
+    color: white;
+    text-decoration: none;
 }
